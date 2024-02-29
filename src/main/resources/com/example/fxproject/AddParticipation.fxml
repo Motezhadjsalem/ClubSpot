@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.AddParticipationController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="334.0" prefWidth="428.0" spacing="10">
+         <children>
+            <Label text="Ajouter une participation" />
+            <TextField fx:id="categorieField" promptText="Nom Participant" />
+            <TextField fx:id="superficieField" promptText="Prenom participant" />
+            <TextField fx:id="disponibiliteField" promptText="Age participant" />
+            <TextField fx:id="disponibiliteField1" layoutX="10.0" layoutY="110.0" promptText="ID de l'événment" />
+            <TextField fx:id="disponibiliteField11" layoutX="10.0" layoutY="146.0" promptText="ID d'utilisateur" />
+            <Label fx:id="statusLabel" />
+            <Button onAction="#addEmplacement" prefHeight="26.0" prefWidth="436.0" text="Ajouter Participation" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
